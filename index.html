@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Megasom </title>
+    <meta charset="utf-8">
+</head>
+
+<body background="imagem/fundin.png" text="white">
+    <font size="20">
+        <p align="center">
+            MegaSom
+        </p>
+    </font>
+
+    <table border="3" width="500" align="center" bordercolor="orange" bgcolor="gray">
+
+        <tr>
+            <td>
+
+                <fieldset>
+                    <!--contorno ou margem para o formulário -->
+                    <legend align=""> Digite seus dados </legend>
+
+                    <form action="enviar.php" method="post" name="cadastro">
+                        <table border="0" bordercolor="brown">
+                            <tr>
+                                <td><label> Usuario: </label></td>
+                                <td><input type="text" id="Usuario" name="Usuario" size="30" maxlength="5"
+                                        placeholder="Digite seu Usuario" required /></td>
+                            </tr>
+                            <tr>
+                                <td><label> Nome: </label></td>
+                                <td><input type="text" id="nome" name="nome" size="30" maxlength="5"
+                                        placeholder="Digite seu nome" required /></td>
+                            </tr>
+
+                            <tr>
+                                <td><label> E-mail: </label></td>
+                                <td><input type="email" id="mail" name="mail" size="30" placeholder="Digite seu e-mail"
+                                        required /></td>
+                            </tr>
+                            <br /> <br />
+
+                            <tr>
+                                <td><label> Telefone: </label></td>
+                                <td><input type="tel" id="tel" name="tel" size="30" placeholder="Digite seu telefone"
+                                        required /></td>
+                            </tr>
+
+                            <tr>
+                                <td><label> CPF: </label></td>
+                                <td><input type="cpf" id="cpf" name="cpf" size="30" placeholder="Digite seu cpf"
+                                        required /></td>
+                            </tr>
+
+                            <tr>
+                                <td><label> RG: </label></td>
+                                <td><input type="cpf" id="rg" name="rg" size="30" placeholder="Digite seu rg"
+                                        required /></td>
+                            </tr>
+
+                            <tr>
+                                <td><label> Data de Nascimento: </label></td>
+                                <td><input type="date" id="data_nasc" name="data_nasc" min="1900-01-01" max="2022-01-01"
+                                        required /></td>
+                            </tr>
+
+                            <tr>
+                                <td><label> Senha: </label></td>
+                                <td><input type="password" id="senha" name="senha" size="30"
+                                        placeholder="Digite sua senha" maxlength="11" required /></td>
+                            </tr>
+
+                            <tr>
+                                <td><label> Confirme a Senha: </label></td>
+                                <td><input type="password" id="csenha" name="csenha" size="30"
+                                        placeholder="Digite sua senha novamente" maxlength="11" required /></td>
+                            </tr>
+
+                            <tr>
+                                <td><label> Sexo: </label></td>
+                                <td><label></label><input type="radio" id="sexo" name="sexo" value="M" required />
+                                    Masculino </label>
+                                    <label></label><input type="radio" id="sexo" name="sexo" value="F" required />
+                                    Feminino </label>
+                                </td>
+                            </tr>
+                        </table>
+                </fieldset>
+
+                <fieldset>
+
+                    <table border="0" bordercolor="brown">
+                    
+                                <legend align=""> Escolha das guitarras </legend>
+
+                        <tr>
+                            <td><label> Buscar Guitarra: </label></td>
+                            <td><input type="search" name="buscar" id="buscar" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label> Selecione o modelo da guitarra: </label></td>
+                            <td><select id="estado" name="estado" required>
+                                    <option value="" selected="selected">--Selecione--</option>
+
+                                    <optgroup label="Tagima">
+                                        <option value="TW-61">Guitarra Eletrica tagima TW-61 Serie Woodstock Preto
+                                        </option>
+                                        <option value="TG510B">Guitarra Tagima Tg510 Branco Wh Tw Series c/
+                                            Humbucker</option>
+                                        <option value="TG520G">Guitarra tagima tg 520 escala escura df mg- metalic
+                                            gold</option>
+                                        <option value="TG500R">Guitarra Tagima TG500 - Roxo Metálico</option>
+                                    </optgroup>
+
+                                    <optgroup label="Flying V">
+                                        <option value="FVSE">Guitarra Gibson Flying V B-2 Satin Ebony</option>
+                                        <option value="FVEB">Guitarra Epiphone Flying V Black</option>
+                                        <option value="FVMB">Guitarra Solar V2. C Flying V Black Matte Canhoto Com
+                                            Bag</option>
+                                        <option value="FVAG">Guitarra epiphone flying V prophecy yellow tiger aged
+                                            gloss</option>
+                                    </optgroup>
+
+                                    <optgroup label="Fender">
+                                        <option value="FBSB">Guitarra Fender Squier Bullet Stratocaster ht, Laurel
+                                            Fingerboard, Black</option>
+                                        <option value="FSHB">Guitarra Fender American Performer Stratocaster 011
+                                            4910 342 Honey Burst</option>
+                                        <option value="FSAS">Guitarra Fender American Professional ii Stratocaster
+                                            rw 011 3900 700 3-Color Sunburst</option>
+                                        <option value="FSCS">Guitarra Fender 037 0222 Squier Contemporary Strato 525
+                                        </option>
+
+                                    </optgroup>
+
+                                    <optgroup label="Gibson">
+                                        <option value="GTHE">Guitarra gibson les paul special tribute humbucker
+                                            ebony satin black</option>
+                                        <option value="GTP90">Guitarra gibson les paul special tribute P90 natural
+                                            walnut satin</option>
+                                        <option value="GFB-2">Guitarra Gibson Flying V B-2 Satin Ebony 10011083
+                                        </option>
+                                        <option value="GTVC">Guitarra Gibson Les Paul Special Tribute P90 Vintage
+                                            Cherry</option>
+                                    </optgroup>
+
+                                    <optgroup label="Stringberg">
+                                        <option value="sts-100S">Guitarra Strato Sts-100 Sunburst Strinberg</option>
+                                        <option value="Sts-100SB">Guitarra Strato Strinberg STS-100 branca</option>
+                                        <option value="Sts-100SC">Guitarra Strinberg STS-100 cs Strato Cherry
+                                            Sunburst</option>
+                                        <option value="Lps200S">Guitarra Strinberg LPS200 sb Les Paul Sunburst
+                                        </option>
+
+                                    </optgroup>
+
+                                    <optgroup label="Lespaul">
+                                        <option value="LPSS">Guitarra Vogga Les Paul Solidwood Standard Black
+                                        </option>
+                                        <option value="LPSC">Guitarra Vogga Les Paul Standard Cherry Sunburst
+                                            Vcg621n</option>
+                                        <option value="LPHC">Guitarra Epiphone Les Paul sl Heritage Cherry Sunburst
+                                        </option>
+                                        <option value="LPIT">Guitarra gibson les paul tribute satin iced tea
+                                        </option>
+                                    </optgroup>
+                                </select></td>
+                        </tr>
+
+                        <tr>
+                            <td><label> Selecione a cor da guitarra desejada: </label></td>
+                            <td><input type="color" name="cor" id="cor" required /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label> Selecione quantas cordas deseja na guitarra: </label></td>
+                            <td><input type="number" name="cont" id="cont" min="3" max="12" /></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <table border="0" bordercolor="brown">
+                        
+                                <legend align=""> Formas de pagamentos </legend>
+                            
+                        <tr>
+                            <td><label> Forma de Pagamento: </label></td>
+                            <td><label></label><input type="radio" id="FP" name="FP" value="Debito" required />
+                                Debito </label>
+                                <label></label><input type="radio" id="FP" name="FP" value="Boleto Bancario" required />
+                                Boleto Bancario </label>
+                                <label></label><input type="radio" id="FP" name="FP" value="Cartão de Crédito"
+                                    required />
+                                Cartão de Credito </label>
+                                <label></label><input type="radio" id="FP" name="FP" value="Picpay" required />
+                                Picpay </label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label> Operadora de pagamento: </label></td>
+                            <td><label></label><input type="radio" id="OP" name="OP" value="Visa" required />
+                                Visa </label>
+                                <label></label><input type="radio" id="OP" name="OP" value="Mastercard" required />
+                                Mastercard </label>
+                                <label></label><input type="radio" id="OP" name="OP" value="Elo" required />
+                                Elo </label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label> Deseja incluir amplificador?: </label></td>
+                            <td><label></label><input type="radio" id="AP" name="AP" value="Sim" required />
+                                Sim </label>
+                                <label></label><input type="radio" id="AP" name="AP" value="Não" required />
+                                Não </label>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td><label> Assunto: </label></td>
+
+                            <td><textarea id="assunto" name="assunto" cols="40" rows="10" maxlength="240"
+                                    placeholder="Se preciso, deixe uma declaração ao Luthier (Ex: Canhoto)"
+                                    required></textarea> <br></td>
+                        </tr>
+
+                        <th colspan="2" align="right"><input type="submit" id="enviar" name="Enviar" value="ENVIAR" />
+                            <input type="reset" id="limpar" name="limpar" value="LIMPAR" />
+
+                            <button type="submit" id="send" name="send">
+                                <img src="Imagem/497450-200.png" width="20" height="20" />
+                            </button>
+                        </th>
+                    </table>
+                    </form>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

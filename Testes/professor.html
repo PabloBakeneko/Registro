@@ -1,0 +1,103 @@
+<html>
+
+ <head>
+   <title> HTML5 Forms </title>
+   <meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+ </head>
+
+  <body>
+
+   <fieldset>
+    <legend> Formulário HTML5 </legend>
+     <form action="enviar.php" method="post" name="exemplos" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+
+      <label> Contador: </label>
+      <input type="number" name="cont" id="cont" min="1" max="10"/>
+
+       <br/>
+
+      <input type="file" name="upload" id="upload" />
+
+       <br/>
+
+       <label> Selecione uma Cor </label>
+       <input type="color" name="cor" id="cor"/>
+
+       <br/>
+
+       <label> Volume: </label>
+       <input type="range" name="volume" id="volume" min="0" max="100"/>  
+
+       <br/>
+
+       <label> Mês: </label>
+       <input type="month" name="mes" id="mes"/>
+
+       <br/>
+
+       <label> Semana: </label>
+       <input type="week" name="semana" id="semana"/>
+
+       <br/>
+       <label> Horário: </label>
+       <input type="time" name="hora" id="hora"/>
+
+       <br/>
+       <label> Data e Hora: </label>
+       <input type="datetime-local" name="dathor" id="dathor"/> 
+
+       <br/>
+       <label> E-mail: </label>
+       <input type="email" name="mail" id="mail" placeholder="Digite o email"/>
+
+       <br/>
+       <label> Buscar: </label>
+       <input type="search" name="buscar" id="buscar"/>
+
+       <br/>
+       <label> Telefone: </label>
+       <input type="tel" name="fone" id="fone" maxlength="11"/>
+
+       <br/>
+       <label> Site: </label>
+       <input type="url" name="site" name="site"/>
+
+       <br/>
+       <label> Navegadores: </label>
+       <input list="navegadores">
+       <datalist id="navegadores">
+        <option value="Internet Explorer 10">
+        <option value="Mozila Firefox">
+        <option value="Google Chrome">
+        <option value="Opera Browser">
+        <option value="Safari 9">
+       </datalist>
+
+       <br/>
+       <label> Tipo de Criptografia: </label>
+       <keygen name="security" id="security"/>
+
+       <br/>
+       <label> Nível do Volume: </label>
+       <label> 0 </label>
+       <input type="range" id="a" name="a" value="50">
+       <label> 100 + <label>
+       <input type="number" id="b" name="b" value="50">
+       <label> = </label>
+       <output name="x" for="a b"></output>
+
+       <br/>
+       <input type="submit" id="enviar" name="enviar" value="Enviar"/>
+       <br/>
+       <input type="button" id="enviar" name="enviar" value="Enviar"/>
+       <br/>
+       <button type="button" id="enviar" name="enviar" onclick="alert('Não vai ter golpe!!!')"> Clique aqui </button>
+       <br/>
+       <button type="button" id="enviar" name="enviar" onclick="alert('Você é muito Curioso')"> <img src="imagens/Linkedin-logo-8.png" width="80" height="80" /> </button>
+
+     </form>
+   </fieldset>
+
+  </body>
+
+</html>
